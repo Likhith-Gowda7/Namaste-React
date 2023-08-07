@@ -1,0 +1,29 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is a react project",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Likhith-Gowda7/Namaste-React.git"
+  },
+  "author": "Likhith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Likhith-Gowda7/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Likhith-Gowda7/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browswerslist": [
+    "last 2 versions"
+  ]
+}
