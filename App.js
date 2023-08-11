@@ -1,23 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "children" }, [
-    React.createElement("h1", {}, "This is a React Course"),
-    React.createElement("h2", {}, "I am a H2 tag"),
-  ]),
-  React.createElement("div", { id: "children1" }, [
-    React.createElement("h1", {}, "I am a H1 tag"),
-    React.createElement("h2", {}, "I am a H2 tag"),
-  ]),
-]);
+//React Component
+const JsxHeading = function () {
+  return <h1 id="heading">Namste from React JSX</h1>;
+};
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World from React!"
+// Component Composition
+const HeadingComponent = () => (
+  <div id="container">
+    <JsxHeading />
+    <h1 className="heading">Namste from React Functional Component</h1>
+  </div>
 );
+
+// JSX is transpiled before it reaches JS by Parcel and Babel
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<HeadingComponent />);
