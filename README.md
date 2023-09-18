@@ -62,3 +62,5 @@ const [listOfRes] = useState();
 
 - If no array dependency, useEffect is called after every render.
 - If dependency array is empty, useEffect is called only on initial render, just once
+
+Why super(props)
